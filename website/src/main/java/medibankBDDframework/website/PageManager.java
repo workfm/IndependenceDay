@@ -13,6 +13,6 @@ public class PageManager extends BasePage{
     public BasePage basePage = new BasePage();
     public LoginPage lp = new LoginPage();
    public LandingPage ldp = new LandingPage();
-
+   public TransferMoney tm = new TransferMoney();
     
 }
