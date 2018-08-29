@@ -7,4 +7,4 @@ And navigates to "<page>"
 
 Examples:
 |System|User|Pass|link|page|
-|core|aa|aa|tm|pg|
+|MediWebsite|abhishek|Pass1|Medibank|Quote|
