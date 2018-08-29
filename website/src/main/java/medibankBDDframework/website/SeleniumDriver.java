@@ -33,10 +33,10 @@ public class SeleniumDriver
                     case "Chrome":
                         path = new File("src//test//java//Drivers//chromedriver.exe").getAbsolutePath();
                        System.out.println(path);
-                        System.setProperty("webdriver.chrome.driver", "C:\\Users\\agaur\\eclipse-workspace\\firstproject\\chromedriver\\chromedriver.exe");
-                      // System.setProperty("user.dir", System.getProperty("user.dir")+"\\chromedriver\\chromedriver.exe"); 
-                       //String currentDir = System.getProperty("user.dir");
-                       //System.out.println("Current dir using System:" +currentDir);
+                       // System.setProperty("webdriver.chrome.driver", "C:\\Users\\agaur\\eclipse-workspace\\firstproject\\chromedriver\\chromedriver.exe");
+                      System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\chromedriver\\chromedriver.exe"); 
+                       String currentDir = System.getProperty("user.dir");
+                       System.out.println("Current dir using System:" +currentDir);
                        
                        _driver = new ChromeDriver();
                       //  ConfigureDriver();

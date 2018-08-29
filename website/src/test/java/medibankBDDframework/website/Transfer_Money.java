@@ -14,13 +14,13 @@ public class Transfer_Money extends BasePage{
 		
 	PageManager pm = new PageManager();
 	
-	@Given("user logs into \"([^\"]*)\" using \"([^\"]*)\" and \"([^\"]*)\"$")
+	@Given("^user logs into \"([^\"]*)\" using \"([^\"]*)\" and \"([^\"]*)\"$")
 	public void logs_into(String system, String user_id, String password) {
 		System.out.println("hello"+"-----------"+system+"hhhhhhhhhhh"+user_id+password);
 		pm.lp.logintoSystem(system, user_id, password);
 	}
 	
-	@When("^he clicks \"([^\"]*)\"$")
+	@When("^he clicks on \"([^\"]*)\"$")
 	public void he_clicks(String linktext) {
 	System.out.println(linktext);
 	pm.ldp.checkSuccessfulLogon();	

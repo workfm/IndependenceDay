@@ -1,6 +1,10 @@
-Feature: Transfer Money
+Feature: TransferMoney
 
-Scenario:
-Given user logs into core using aa and aa
-When he clicks on tm
-And navigates to xx
+Scenario Outline:
+Given user logs into "<System>" using "<User>" and "<Pass>"
+When he clicks on "<link>"
+And navigates to "<page>"
+
+Examples:
+|System|User|Pass|link|page|
+|core|aa|aa|tm|pg|
