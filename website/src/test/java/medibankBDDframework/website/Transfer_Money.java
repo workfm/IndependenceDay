@@ -18,6 +18,7 @@ public class Transfer_Money extends BasePage{
 	public void logs_into(String system, String user_id, String password) {
 		System.out.println("hello"+"-----------"+system+ user_id + password);
 		pm.lp.logintoSystem(system, user_id, password);
+	
 	}
 	
 	@When("^he clicks on \"([^\"]*)\"$")
